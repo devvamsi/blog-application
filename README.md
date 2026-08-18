@@ -1,35 +1,56 @@
-# MyBlog - Blog Application
+# MyBlog - Full Stack Blog Application
 
-A responsive frontend blog application built using HTML, CSS and JavaScript.
+MyBlog is a full-stack blog application built using HTML, CSS, JavaScript, Node.js, Express.js and MongoDB.
 
 ## Features
 
-- Responsive home page
 - User registration
 - User login
-- Dashboard
+- JWT authentication
 - Create blog posts
-- Edit blog posts
-- Delete blog posts
-- Logout functionality
-- Dashboard access protection
-- Local storage for user and blog data
-- Mobile responsive design
+- View all blogs
+- Edit your own blogs
+- Delete your own blogs
+- Blog ownership protection
+- MongoDB database
+- REST APIs
+- Logout
+- Protected dashboard
 
-## Technologies Used
+## Technologies
 
 - HTML5
 - CSS3
 - JavaScript
-- LocalStorage
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT
 
-MyBlog
-│
-├── Features
-├── Technologies
-├── Backend APIs
-├── Authentication
-├── Database
-├── Project Structure
-├── How to Run
-└── Author
+## API Endpoints
+
+### Authentication
+
+POST /api/auth/register
+
+POST /api/auth/login
+
+### Blogs
+
+POST /api/blog/create
+
+GET /api/blog
+
+PUT /api/blog/:id
+
+DELETE /api/blog/:id
+
+## How to Run
+
+### Backend
+
+```bash
+cd backend
+npm install
+node server.js
