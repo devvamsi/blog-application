@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyBlog | Register</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h2>MyBlog</h2>
+
+            <div>
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Register Section -->
+    <main>
+
+        <section class="login-section">
+
+            <div class="login-box">
+
+                <h1>Create Account</h1>
+
+                <p>Join MyBlog and start sharing your ideas.</p>
+
+
+                <form id="registerForm">
+
+                    <!-- Name -->
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="registerEmail">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="registerEmail"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="form-group">
+                        <label for="registerPassword">Password</label>
+
+                        <input
+                            type="password"
+                            id="registerPassword"
+                            placeholder="Create a password"
+                            required
+                        >
+                    </div>
+
+
+                    <!-- Confirm Password -->
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm your password"
+                            required
+                        >
+                    </div>
+
+
+                    <!-- Register Button -->
+                    <button type="submit">
+                        Create Account
+                    </button>
+
+                </form>
+
+
+                <p class="register-link">
+                    Already have an account?
+                    <a href="login.html">Login</a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 MyBlog. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="javascript/script.js"></script>
+
+</body>
+</html>

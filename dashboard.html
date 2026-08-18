@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyBlog | Dashboard</title>
+
+    <!-- Protect Dashboard -->
+    <script>
+        if (localStorage.getItem("isLoggedIn") !== "true") {
+            window.location.replace("login.html");
+        }
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+
+    <header>
+
+        <nav>
+
+            <h2>MyBlog</h2>
+
+            <div>
+
+                <a href="index.html">Home</a>
+
+                <a href="dashboard.html">Dashboard</a>
+
+                <a href="create-blog.html">Create Blog</a>
+
+                <a href="index.html" onclick="localStorage.removeItem('isLoggedIn')">Logout</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         DASHBOARD
+    ========================== -->
+
+    <main>
+
+        <section class="dashboard">
+
+            <div class="dashboard-header">
+
+                <div>
+
+                    <h1>My Dashboard</h1>
+
+                    <p>
+                        Manage your blog posts and share your ideas.
+                    </p>
+
+                </div>
+
+
+                <a href="create-blog.html" class="create-btn">
+                    + Create Blog
+                </a>
+
+            </div>
+
+
+            <!-- Blogs will be loaded here by JavaScript -->
+
+            <div
+                class="dashboard-blogs"
+                id="dashboardBlogs">
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 MyBlog. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+     <script>
+    if (!localStorage.getItem("token")) {
+        window.location.href = "login.html";
+    }
+</script>
+
+<script src="javascript/script.js"></script>
+
+    <script src="javascript/script.js"></script>
+
+</body>
+
+</html>
