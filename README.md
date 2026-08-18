@@ -23,19 +23,13 @@ A responsive frontend blog application built using HTML, CSS and JavaScript.
 - JavaScript
 - LocalStorage
 
-## Project Structure
-
-```text
-BLOG-APPLICATION/
+MyBlog
 │
-├── css/
-│   └── style.css
-│
-├── javascript/
-│   └── script.js
-│
-├── index.html
-├── login.html
-├── register.html
-├── dashboard.html
-└── create-blog.html
+├── Features
+├── Technologies
+├── Backend APIs
+├── Authentication
+├── Database
+├── Project Structure
+├── How to Run
+└── Author
