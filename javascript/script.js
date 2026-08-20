@@ -1,7 +1,17 @@
 const API_URL = "http://localhost:5000/api";
 
-// Protect pages that require login
-if (!localStorage.getItem("token")) {
+// Protect only pages that require login
+const protectedPages = [
+    "dashboard.html",
+    "create-blog.html"
+];
+
+const currentPage = window.location.pathname.split("/").pop();
+
+if (
+    protectedPages.includes(currentPage) &&
+    !localStorage.getItem("token")
+) {
     window.location.href = "login.html";
 }
 
